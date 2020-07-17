@@ -1,0 +1,15 @@
+dependencies:
+- name: elasticsearch-operator
+  repository: https://ibm-garage-cloud.github.io/toolkit-charts/
+  version: 0.3.0
+- name: jaeger-operator
+  repository: https://ibm-garage-cloud.github.io/toolkit-charts/
+  version: 0.6.0
+- name: kiali-operator
+  repository: https://ibm-garage-cloud.github.io/toolkit-charts/
+  version: 0.3.0
+- name: service-mesh-operator
+  repository: https://ibm-garage-cloud.github.io/toolkit-charts/
+  version: 0.5.1
+digest: sha256:ab7c61df2f53af05759a1d7daea105509906da6277b6ac9b1348f429a6294a65
+generated: "2020-07-17T12:40:18.750795-05:00"
