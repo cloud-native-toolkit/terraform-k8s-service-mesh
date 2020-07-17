@@ -32,6 +32,10 @@ locals {
 resource "null_resource" "setup-chart" {
   provisioner "local-exec" {
     command = "mkdir -p ${local.chart_dir} && cp -R ${path.module}/chart/${local.chart_name}/* ${local.chart_dir} && echo ${var.cluster_config_file}"
+
+    environment = {
+      KUBECONFIG = var.cluster_config_file
+    }
   }
 }
 
