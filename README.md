@@ -35,7 +35,7 @@ module "dev_service-mesh" {
   ingress_subdomain   = module.dev_cluster.ingress_hostname
   olm_namespace       = module.dev_software_olm.olm_namespace
   operator_namespace  = module.dev_software_olm.target_namespace
-  name                = "argocd"
+  name                = "service-mesh"
 }
 ```
 
