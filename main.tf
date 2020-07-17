@@ -31,12 +31,12 @@ locals {
 
 resource "null_resource" "setup-chart" {
   provisioner "local-exec" {
-    command = "mkdir -p ${local.chart_dir} && cp -R ${path.module}/chart/${local.chart_name}/* ${local.chart_dir}"
+    command = "mkdir -p ${local.chart_dir} && cp -R ${path.module}/chart/${local.chart_name}/* ${local.chart_dir} && echo ${var.cluster_config_file}"
   }
 }
 
 resource "null_resource" "delete-consolelink" {
-  count = var.cluster_type != "kubernetes" ? 1 : 0
+  count = var.cluster_type == "ocp4" ? 1 : 0
 
   provisioner "local-exec" {
     command = "kubectl delete consolelink -l grouping=garage-cloud-native-toolkit -l app=${var.name} || exit 0"
