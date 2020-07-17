@@ -10,6 +10,6 @@ dependencies:
   version: 0.3.0
 - name: service-mesh-operator
   repository: https://ibm-garage-cloud.github.io/toolkit-charts/
-  version: 0.4.0
-digest: sha256:e5651475d87e0d0ea12dee4c6b092c53ab140efe01a6bf89697d9ea7c5e149f4
-generated: "2020-07-17T12:13:53.139808-05:00"
+  version: 0.5.0
+digest: sha256:933f738be34d20b9cf74904301973312db7b6c131a68ea32ff9b0c64a5d31f00
+generated: "2020-07-17T12:32:06.058455-05:00"
